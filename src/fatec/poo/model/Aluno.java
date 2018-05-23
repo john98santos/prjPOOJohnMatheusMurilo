@@ -9,6 +9,16 @@ package fatec.poo.model;
  *
  * @author john_
  */
-public class Aluno {
+public class Aluno extends Pessoa{
+    private String escolaridade;
+    
+    public Aluno(String nome, String cpf){
+        super (nome, cpf);
+    }
+
+    public void setEscolaridade(String escolaridade) {
+        this.escolaridade = escolaridade;
+    }
+    
     
 }
