@@ -59,5 +59,8 @@ public class Turma {
         this.curso = curso;
     }
     
+    public void EmitirListaFrequencia() {
+    
+    }
     
 }
