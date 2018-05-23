@@ -5,6 +5,8 @@
  */
 package fatec.poo.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author john_
@@ -12,6 +14,7 @@ package fatec.poo.model;
 public class Instrutor extends Pessoa{
     private String Formacao;
     private String AreaAtuacao;
+    private ArrayList<Turma> turmas = new ArrayList<Turma>();  
 
     public Instrutor(String nome, String cpf){
         super (nome, cpf);
@@ -24,6 +27,10 @@ public class Instrutor extends Pessoa{
     public void setAreaAtuacao(String AreaAtuacao) {
         this.AreaAtuacao = AreaAtuacao;
     }
-    
+
+    public void addTurma(Turma t){
+        turmas.add(t);
+        t.setInstrutor(this);
+    }
     
 }
